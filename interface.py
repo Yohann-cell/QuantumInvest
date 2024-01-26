@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import yfinance as yf
 from streamlit_gsheets import GSheetsConnection
+import pandas as pd
 
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 df = conn.read(worksheet="Feuille 1")
