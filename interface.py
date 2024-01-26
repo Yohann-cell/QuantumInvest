@@ -3,13 +3,6 @@ import json
 import yfinance as yf
 from streamlit_gsheets import GSheetsConnection
 
-st.title("Read Google Sheet as DataFrame")
-
-conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read(worksheet="Feuille 1")
-
-st.dataframe(df)
-
 formulaire = st.form(key = 'formulaire1')
 secteur = formulaire.multiselect('Sector :',['Basic Materials', 'Communication Services', 'Consumer Cyclical', 'Consumer Defensive', 'Energy', 'Financial Services', 'Healthcare', 'Industrials','Real Estate','Technology','Utilities'])
 industry = formulaire.multiselect('Industry :',['yohann'])
