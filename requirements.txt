@@ -1,4 +1,5 @@
 streamlit>=1.22.0
 pandasql  # this is for examples/ only
+pandas
 st-gsheets-connection
 yfinance==0.2.35
