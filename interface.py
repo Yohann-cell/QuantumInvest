@@ -6,7 +6,7 @@ from streamlit_gsheets import GSheetsConnection
 st.title("Read Google Sheet as DataFrame")
 
 conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read(worksheet="Example 1")
+df = conn.read(worksheet="Feuille 1")
 
 st.dataframe(df)
 
